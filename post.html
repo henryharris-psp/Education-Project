@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" 
+    integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    
+    <link rel="stylesheet" href="./css/style.css">
+    <script src="https://code.jquery.com/jquery-3.6.3.min.js" integrity="sha256-pvPw+upLPUjgMXY0G+8O0xUf+/Im1MZjXxxgOcBQBXU=" crossorigin="anonymous"></script>
+</head>
+<body>
+
+    <!-- Navigation -->
+    <nav>
+        <img src="img/logo.svg" alt="">
+        <div class="navigation">
+            <ul>
+                <a href="#" id="close"><i class="fa-solid fa-xmark"></i></a>
+                <li> <a href="index.html" c>Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a class="active" href="blog.html">Blog</a></li>
+                <li><a href="courses.html">Courses</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+            <img id="menu-btn" src="img/menu.png" alt="">
+        </div>
+    </nav>
+
+    <section id="blog-container">
+        <div class="blogs blogpost">
+            <div class="post">
+                <img src="./img/b1.jpg" alt="">
+                <h3>Learn Web Development In The Easiest Way</h3>
+                <p>Understand the basics of HTML and CSS: HTML is the foundation of every web page, 
+                    it provides structure and content to the page. CSS is used for styling the web pages. 
+                    Familiarize yourself with the basic syntax of HTML and CSS and learn how to create a simple webpage with them. <br><br>
+                    Learn JavaScript: JavaScript is a programming language that is used to make web pages interactive. 
+                    It allows you to add dynamic effects and functionality to your web page. 
+                    Learn the basics of JavaScript and how to use it in conjunction with HTML and CSS. <br><br>
+                    Choose a text editor: A text editor is a software program that is used to create and edit code. 
+                    There are many free text editors available, such as Visual Studio Code and Sublime Text, that are popular among web developers. 
+                    Choose a text editor that suits your needs and preferences. <br><br>
+                    Familiarize yourself with web development frameworks: Web development frameworks are pre-written code 
+                    libraries that help you build web applications quickly and easily. Some popular frameworks include React, Angular, and Vue. 
+                    Choose a framework that best suits your project requirements and learn how to use it. <br><br>
+                    Learn version control: Version control allows you to keep track of changes to your code over time. Git is a popular version control system used by web developers. 
+                    Learn how to use Git to manage your code and collaborate with others. <br><br>
+                    Practice and build projects: The best way to learn web development is by building projects. Start with small projects and gradually work your way up to more complex projects. 
+                    This will help you develop your skills and gain confidence as a web developer. <br><br>
+                    Stay up-to-date with the latest trends and technologies: Web development is a constantly evolving field, and it's important to stay up-to-date with the latest trends and technologies. 
+                    Follow industry blogs and forums to stay informed about new tools and techniques. <br><br>
+                </p>
+                <a href="#">Read Next?</a>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="footer-col">
+            <h3>Top Products</h3>
+            <li>Manage Reputation</li>
+            <li>Power Tools</li>
+            <li>Manage Website</li>
+            <li>Marketing Service</li>
+        </div>
+        <div class="footer-col">
+            <h3>Quick Links</h3>
+            <li>Jobs</li>
+            <li>Brand Assets</li>
+            <li>Investor Relations</li>
+            <li>Terms of Service</li>
+        </div>
+        <div class="footer-col">
+            <h3>Features</h3>
+            <li>Manage Reputation</li>
+            <li>Power Tools</li>
+            <li>Manage Website</li>
+            <li>Marketing Service</li>
+        </div>
+        <div class="footer-col">
+            <h3>Resources</h3>
+            <li>Guides</li>
+            <li>Research</li>
+            <li>Experts</li>
+            <li>Marketing Service</li>
+        </div>
+        <div class="footer-col">
+            <h3>Newsletter</h3>
+            <p>You can trust us. we only send promo offers,</p>
+            <div class="subscribe">
+                <input type="text" placeholder="Your Email Address...">
+                <a href="#" class="yellow">SUBSCRIBE</a>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>Copyright @2022 All rights reserved | Online course...</p>
+        </div>
+        <div class="pro-links">
+            <i class="fab fa-facebook-f"></i>
+            <i class="fab fa-instagram"></i>
+            <i class="fab fa-linkedin-in"></i>
+        </div>
+    </footer>
+    <SCript>
+        $('#menu-btn').click(function(){
+            $('nav .navigation ul').addClass('active')
+        });
+        $('#close').click(function(){
+            $('nav .navigation ul').removeClass('active')
+        });
+    </SCript>
+
+    <script src="./js/script.js"></script>
+</body>
+</html>
